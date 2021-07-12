@@ -2,12 +2,18 @@ const createNoteTest = () => {
   const note = new Note();
   
   if (note.createNote('Test Note') === ('Test Note')) {
-    return ('Passed');
+    return ('Create Note Test ---> Passed');
   }
   else {
-    return ('Failed');
+    return ('Create Note Test ---> Failed');
   };
 };
 
 
-console.log('Create Note Test ----', createNoteTest())
+class TestOutput {
+
+  runAllTests() {
+    return (createNoteTest())
+  }
+  
+}
