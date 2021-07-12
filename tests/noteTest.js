@@ -15,5 +15,5 @@ class TestOutput {
   runAllTests() {
     return (createNoteTest())
   }
-  
+
 }
