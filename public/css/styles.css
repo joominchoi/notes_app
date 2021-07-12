@@ -1,0 +1,52 @@
+.br {
+  display: block;
+  margin-bottom: 0em;
+}
+
+.headings {
+  margin-left: 0.5%;
+  /* text-align: ; */
+}
+
+.textarea {
+  display: block;
+  /* margin-right: 80%; */
+  margin-left: 0.5%;
+}
+
+.submit {
+  display: block;
+  margin-top: 0.5%;
+  margin-left: 18.25%; 
+  padding-left: auto; 
+  padding-right: auto; 
+  padding-top: auto; 
+  padding bottom: auto; 
+  
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on 
+(add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
