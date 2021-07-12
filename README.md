@@ -1,6 +1,6 @@
 # notes_app
 
-##
+## User Stories
 ```
 As a programmer
 I can see a list of my notes, where each note is abbreviated to the first 20 characters
@@ -21,3 +21,5 @@ As a programmer
 I can use shortcodes like `:fire:` that get converted into emojis like 🔥
 So I can record notes with fun little pictures
 ```
+
+## CRC Models
