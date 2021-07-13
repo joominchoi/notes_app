@@ -18,11 +18,14 @@ class List {
       return (shortenedArray[i])
     }
   };
-};
 
+  displayNote(id) {
+    return this.notes[id].text
+  }
+};
 
 // displayNotes() {
   //   for (let i = 0 ; i < this.notes.length ; i++ ) {
-  //     return (this.notes[i].text)
+  //     return (this.notes[i].text.slice(0, 20))
   //   }
   // };

@@ -70,6 +70,24 @@ const shortenNotesArrayTest = () => {
 
 }
 
+const displayOneNoteTest = () => {
+
+  const noteOne = new Note();
+  const noteTwo = new Note();
+  const list = new List();
+
+  noteOne.createNote('This is a test note');
+  noteTwo.createNote('This is also a test note');
+  list.insertNote(noteOne);
+  list.insertNote(noteTwo);
+  
+  if (list.displayNote(0) === ('This is also a test note')) {
+    return ('Display Specific Note Test ---> Passed')
+  }
+  else {
+    return ('Display Specific Note Test ---> Failed')
+  }
+}
 
 class TestOutput {
 
@@ -88,4 +106,9 @@ class TestOutput {
   runShortenArrayTest = () => {
     return shortenNotesArrayTest()
   }
+
+  runDisplayOneNoteTest = () => {
+  return displayOneNoteTest()
+  }
+
 }
