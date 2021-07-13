@@ -23,5 +23,5 @@ So I can record notes with fun little pictures
 ```
 
 ## CRC Models
-<img width="800" alt="domain model" src="https://github.com/jooomin/notes_app/blob/main/images/CRC_Models.png">
+<img width="800" alt="domain model" src="/public/images/CRC_Models.png">
 
