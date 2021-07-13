@@ -24,9 +24,8 @@ class List {
   }
 };
 
-
 // displayNotes() {
   //   for (let i = 0 ; i < this.notes.length ; i++ ) {
-  //     return (this.notes[i].text)
+  //     return (this.notes[i].text.slice(0, 20))
   //   }
   // };
