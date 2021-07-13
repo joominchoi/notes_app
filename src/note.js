@@ -1,5 +1,12 @@
 class Note {
-  createNote(noteText) {
-    return (noteText);
+  constructor() {
+    this.text = new String;
   }
+
+  createNote(noteText) {
+    this.text = noteText;
+  }
+
+
+  
 };
