@@ -18,6 +18,10 @@ class List {
       return (shortenedArray[i])
     }
   };
+
+  displayNote(id) {
+    return this.notes[id].text
+  }
 };
 
 
