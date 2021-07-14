@@ -5,14 +5,15 @@
 
 .headings {
   margin-left: 0.5%;
+  text-align: center;
   /* text-align: ; */
 }
 
 .textarea {
   display: block;
   /* margin-right: 80%; */
-  margin-left: 0.5%;
-  width: 25%;
+  margin: auto;
+  width: 33.33%;
   height: 100px;
   min-height: 35px;
   max-height: 300px;
@@ -21,7 +22,7 @@
 .submit {
   display: block;
   margin-top: 0.5%;
-  margin-left: 10px; 
+  margin: auto; 
   padding-left: auto; 
   padding-right: auto; 
   padding-top: auto; 
@@ -29,14 +30,26 @@
   
 }
 
+.grid-container {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+  align-items: center;
+  justify-content: center;
   background-color: white;
   font-weight: 600;
   color: black;
   cursor: pointer;
   padding: 10px;
-  width: 25.5%;
+  width: auto;
   text-align: left;
   border: none;
   outline: none;
@@ -46,14 +59,19 @@
 /* Add a background color to the button if it is clicked on 
 (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(163, 163, 163);
+}
+
+.accordion:hover {
+  background-color: rgb(85, 85, 85);
 }
 
 .panel {
   padding: 0 18px;
   background-color: white;
-  width: 25.5%;
+  width: auto;
   max-height: 0;
   overflow: scroll;
   transition: max-height 0.2s ease-out;
 }
+
