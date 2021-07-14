@@ -24,7 +24,6 @@ const insertNoteTest = () => {
   else {
     return ('Insert Note Test ---> Failed')
   }
-
 };
 
 const displayNotesTest = () => {
@@ -44,7 +43,6 @@ const displayNotesTest = () => {
   else {
     return ('Display Note Test ---> Failed');
   }
-
 };
 
 const shortenNotesArrayTest = () => {
@@ -67,7 +65,6 @@ const shortenNotesArrayTest = () => {
   else {
     return ('Shorten Notes Array Test ---> Failed')
   }
-
 }
 
 const displayOneNoteTest = () => {
