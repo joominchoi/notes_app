@@ -18,33 +18,34 @@
     <h1 class="headings">Notes</h1>
     <span class="br"></span>
     <form id="note">
-      <textarea class="textarea" id="note" name="note" placeholder="Input new note here..."></textarea>
+      <textarea class="textarea" id="note-text" name="note" placeholder="Input new note here..."></textarea>
       <input class="submit" type="submit" value="Add note"></input>
     </form>
     <br>
     <h2 class="headings">My Notes</h2>
-    <div class="grid-container">
-    <div>
-      <button class="accordion">First note..........</button>
-        <div class="panel">
-          <p>What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    </div>
-    <div>
-    <button class="accordion">Second note..........</button>
-    <div class="panel">
-      <p>Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-    </div>
-    </div>
-    <div>
-    <button class="accordion">Third note..........</button>
-    <div class="panel">
-      <p>Try to figure out how to display notes chronologically from left to right</p>
-    </div>
+
+    <div class="grid-container">   
+      <button id="note-1" class="accordion">First note...</button>
+      <div id='note-1-full' class="panel"> <p></p> </div>
+    
+      <button id="note-2" class="accordion"></button>
+      <div id='note-2-full' class="panel"> <p></p> </div>
+    
+      <button id="note-3" class="accordion"></button>
+      <div id='note-3-full' class="panel"> <p></p> </div>
+    
+      <button id="note-4" class="accordion"></button>
+      <div id='note-4-full' class="panel"> <p></p> </div>
+    
+      <button id="note-5" class="accordion"></button>
+      <div id='note-5-full' class="panel"> <p></p> </div>
+    
+      <button id="note-6" class="accordion"></button>
+      <div id='note-6-full' class="panel"> <p></p> </div>
   </div>
-  </div>
-    <script src="/Users/jooomin/Documents/Makers/Makers Main Course/Week 7/notes_app/src/interface.js"></script>
+
+    <script src="../src/interface.js"></script>
+    <script src="../src/list.js"></script>
+    <script src="../src/note.js"></script>
   </body>
 </html>
