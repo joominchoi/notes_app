@@ -29,4 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     noteNum ++;
   })
 
+  const getEmoji = () => {
+    fetch('https://makers-emojify.herokuapp.com/')
+    .then(function(res) {
+      console.log(res);
+    })
+  }
+
+  getEmoji();
+
 })
