@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('#test-five').innerText = tests.runDisplayOneNoteTest();
   }
 
-
   runTests();
 
 })

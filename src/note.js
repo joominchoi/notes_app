@@ -7,6 +7,4 @@ class Note {
     this.text = noteText;
   }
 
-
-  
 };
