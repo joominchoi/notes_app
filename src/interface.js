@@ -29,12 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
     noteNum ++;
   })
 
-
-
-
-
-
-
-
-
 })
