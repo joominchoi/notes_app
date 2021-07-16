@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     const noteText = document.querySelector('#note-text').value;
     emojify(`${noteText}`, emojiNote);
+    document.getElementById("note-text").value = "";
   })
 
   document.querySelector('#clear-notes').addEventListener('click', () => {
