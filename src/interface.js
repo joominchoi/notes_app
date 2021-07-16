@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     emojify(`${noteText}`, emojiNote);
   })
 
+  document.querySelector('#clear-notes').addEventListener('click', () => {
+    localStorage.clear()
+    location.reload();
+  })
+
   const emojify = (emojiText, emojiNote) => {
     const data = { text: `${emojiText}` };
     var jsonObj;
@@ -25,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const emojiNote = (jsonObj) => {
   let noteText = jsonObj.emojified_text;
+  saveToStorage(`#note-${noteNum.toString()}`, noteText);
   note = new Note();
   note.createNote(noteText);
   list.insertNote(note);
@@ -51,6 +57,25 @@ document.addEventListener("DOMContentLoaded", () => {
     container.insertAdjacentElement('beforeend', newDiv);
   }
 
+  const saveToStorage = (noteNum, noteText) => {
+    localStorage.setItem(noteNum, noteText)
+  }
+
+  const loadNotes = () => {
+    for (let i = 0; i < localStorage.length ; i++ ) {
+      const key = localStorage.key(i);
+      const value = localStorage.getItem(key);
+
+      note = new Note();
+      note.createNote(value);
+      list.insertNote(note);
+      createNoteElement();
+      classEventListener();
+      document.querySelector(`#note-${noteNum.toString()}`).innerText = list.displayNotes();
+      document.querySelector((`#note-${noteNum.toString()}-full`)).innerText = list.displayNote(0);
+      noteNum ++;
+    }
+  }
 
   const classEventListener = () => {
     let acc = document.getElementsByClassName("accordion");
@@ -68,8 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-  
+
+  loadNotes();
+
 })
+
+// - Save each note as a key value pair when created to local storage, note1 : noteText
+// - On start up of script it should loop through each note in the storage and create a html element for each one
+// - increase NoteNum
 
 // document.querySelector('#note').addEventListener('submit', (event) => {
 //   event.preventDefault();
