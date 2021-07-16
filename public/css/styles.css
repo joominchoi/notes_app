@@ -1,51 +1,102 @@
+body {
+  height: 800px;
+  background-color: #192c4b ;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  /* background-image: linear-gradient( #192c4b,#3f6d8c, #8BC6EC); */
+}
+
 .br {
   display: block;
   margin-bottom: 0em;
 }
 
-.headings {
-  margin-left: 0.5%;
+h1 {
   text-align: center;
-  /* text-align: ; */
+  color: white;
+  font-size: 75pt;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 900;
+  text-shadow: 4px 4px grey;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 35pt;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 900;
+  text-shadow: 3px 3px grey;;
 }
 
 .textarea {
   display: block;
-  /* margin-right: 80%; */
+  background-color: #e7f0ff;
+  outline: none;  
   margin: auto;
   width: 33.33%;
-  height: 100px;
+  height: 30px;
+  /* height: 100px; */
+  border-style:solid;
+  border-color: grey;
+  border-width: 3px;
+  border-radius: 8px;
   min-height: 35px;
   max-height: 300px;
+  transition: height 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.textarea:focus-within {
+  height: 200px;
+  animation-fill-mode: forwards;
 }
 
 .submit {
   display: block;
+  background-color: white ;
+  font-weight: 700;
+  color: #192c4b ;
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.598);
+  border: none;
   margin-top: 0.5%;
   margin: auto; 
-  padding-left: auto; 
-  padding-right: auto; 
-  padding-top: auto; 
-  padding-bottom: auto; 
+  padding-left: 10pt; 
+  padding-right: 10pt; 
+  padding-top: 2pt; 
+  padding-bottom: 2pt;
+  width: auto;
+  border-radius: 10px;
+}
+
+.submit:hover {
+  background-color: #a1c4fd;
+  color: white;
+  text-shadow: 0.5px 0.5px grey;
+  padding-left: 12pt; 
+  padding-right: 12pt; 
+  padding-top: 3pt; 
+  padding-bottom: 3pt; 
 }
 
 .grid-container {
   display: grid;
   flex-direction: row;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 10px;
-  background-color: white;
+  background-color: transparent;
   padding: 10px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   align-items: center;
-  justify-content: center;
-  background-color: white;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20pt;
   font-weight: 600;
-  color: black;
+  color: white;
   cursor: pointer;
   padding: 10px;
   width: auto;
@@ -58,19 +109,29 @@
 /* Add a background color to the button if it is clicked on 
 (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: rgb(163, 163, 163);
+  background-color: transparent;
+  outline: none;
 }
 
 .accordion:hover {
-  background-color: rgb(85, 85, 85);
+  font-size: 21pt;
+  background-color: transparent;
+  color: #a1c4fd;
+  outline: none;
 }
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  font-family: sans-serif;
+  font-weight:lighter;
+  font-size: 15pt;
+  color: white;
+  /* background-color: #bcd7ff2e;
+  border-radius: 5%; */
   width: auto;
   max-height: 0;
   overflow: scroll;
   transition: max-height 0.2s ease-out;
 }
-
+/* 
+#bcd7ff */
