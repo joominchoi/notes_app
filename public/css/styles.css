@@ -1,5 +1,5 @@
 body {
-  height: 800px;
+  height: 1000px;
   background-color: #192c4b ;
   background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
   /* background-image: linear-gradient( #192c4b,#3f6d8c, #8BC6EC); */
@@ -51,15 +51,16 @@ h2 {
   animation-fill-mode: forwards;
 }
 
-.submit {
-  display: block;
+.add-button {
+  display: inline;
+  justify-content: center;
   background-color: white ;
   font-weight: 700;
   color: #192c4b ;
   text-shadow: 1px 1px rgba(128, 128, 128, 0.598);
   border: none;
   margin-top: 0.5%;
-  margin: auto; 
+  margin-left: 46%; 
   padding-left: 10pt; 
   padding-right: 10pt; 
   padding-top: 2pt; 
@@ -68,8 +69,35 @@ h2 {
   border-radius: 10px;
 }
 
-.submit:hover {
+.delete-button {
+  display: inline-block;
+  background-color: white ;
+  font-weight: 700;
+  color: #192c4b ;
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.598);
+  border: none;
+  margin-top: 0.5%;
+  margin-left: 89.5pt;
+  padding-left: 10pt; 
+  padding-right: 10pt; 
+  padding-top: 2pt; 
+  padding-bottom: 2pt;
+  width: auto;
+  border-radius: 10px;
+}
+
+.add-button:hover {
   background-color: #a1c4fd;
+  color: white;
+  text-shadow: 0.5px 0.5px grey;
+  padding-left: 12pt; 
+  padding-right: 12pt; 
+  padding-top: 3pt; 
+  padding-bottom: 3pt; 
+}
+
+.delete-button:hover {
+  background-color: #ff4747;
   color: white;
   text-shadow: 0.5px 0.5px grey;
   padding-left: 12pt; 
