@@ -7,7 +7,7 @@ body {
 
 .br {
   display: block;
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
 }
 
 h1 {
@@ -52,15 +52,16 @@ h2 {
 }
 
 .add-button {
-  display: inline;
+  display: block;
   justify-content: center;
   background-color: white ;
   font-weight: 700;
   color: #192c4b ;
   text-shadow: 1px 1px rgba(128, 128, 128, 0.598);
   border: none;
-  margin-top: 0.5%;
-  margin-left: 46%; 
+  /* margin-top: 0.5%;
+  margin-left: 45%; */
+  margin: auto;
   padding-left: 10pt; 
   padding-right: 10pt; 
   padding-top: 2pt; 
@@ -70,14 +71,15 @@ h2 {
 }
 
 .delete-button {
-  display: inline-block;
+  display: block;
   background-color: white ;
   font-weight: 700;
   color: #192c4b ;
   text-shadow: 1px 1px rgba(128, 128, 128, 0.598);
   border: none;
-  margin-top: 0.5%;
-  margin-left: 89.5pt;
+  /* margin-top: 0.5%;
+  margin-left: 45%; */
+  margin: auto;
   padding-left: 10pt; 
   padding-right: 10pt; 
   padding-top: 2pt; 
@@ -160,6 +162,14 @@ h2 {
   max-height: 0;
   overflow: scroll;
   transition: max-height 0.2s ease-out;
+}
+
+.image {
+  float:right;
+  position: absolute;
+  border-radius: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
 }
 /* 
 #bcd7ff */
