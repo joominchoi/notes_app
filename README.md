@@ -1,5 +1,7 @@
 # notes_app
+**A web app for taking notes**
 
+<a href="https://jooomin.github.io/notes_app/public/index.html">Check it out here</a>
 ## User Stories
 ```
 As a programmer
